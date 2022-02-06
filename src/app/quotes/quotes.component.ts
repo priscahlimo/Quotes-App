@@ -7,7 +7,7 @@ import { Quotes } from '../quotes';
   styleUrls: ['./quotes.component.css']
 })
 export class QuotesComponent implements OnInit {
-  sampleQuotes:Quotes[]=[
+  quotes:Quotes[]=[
     new Quotes("Mahatma Ghandi", 'Priscah Limo', 'Find an online version and watch merlin find his son',5,5 ,new Date(2023,8,4)),
      new Quotes("Oprah winfrey", 'Priscah Limo', 'Find an online version and watch merlin find his son',5,5 , new Date(2023,8,4)),
     new Quotes("Maya Angelou", 'Priscah Limo', 'Find an online version and watch merlin find his son',5,5 , new Date(2023,8,4)),
