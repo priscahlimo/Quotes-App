@@ -1,5 +1,8 @@
 <app-home></app-home>
-<app-card></app-card>
+
+<div class="col-md-6 w-100 d-flex justify-content-center">
+    <app-form (addQuote)="addNewQuote($event)" ></app-form>
+</div>
 
     <div class="row">
         <div  *ngFor="let quote of quotes; let i = index " class="col-md-4 mb-4 border border-success">

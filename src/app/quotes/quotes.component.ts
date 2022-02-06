@@ -13,6 +13,13 @@ export class QuotesComponent implements OnInit {
     new Quotes("Maya Angelou", 'Priscah Limo', '“I have learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.”',5,5 , new Date(2023,8,4)),
   ];
 
+  addNewQuote(quote:any){
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength+1;
+    quote.postedOn = new Date(quote.postedOn)
+    this.quotes.push(quote)
+  }
+
 
   constructor() { }
 
