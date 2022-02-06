@@ -2,14 +2,14 @@
 
 
     <div class="row">
-        <div  *ngFor="let quote of quotes; let i = index " class="col-md-4 mb-4 ">
+        <div  *ngFor="let quote of quotes; let i = index " class="col-md-4 mb-4 border border-success">
             <div class="card-header">
-             {{quote.postedOn}}
+             <!-- {{quote.postedOn}} -->
             </div>
             <div class="card-body">
               <blockquote class="blockquote mb-0">
                 <p> {{quote.description}} </p>
-                <footer class="blockquote-footer"> {{quote.name}} <cite title="Source Title"> {{quote.author}} </cite></footer>
+                <footer class="blockquote-footer"><cite title="Source Title"> {{quote.name}} </cite></footer>
               </blockquote>
             </div>
             <div class="card-body">
