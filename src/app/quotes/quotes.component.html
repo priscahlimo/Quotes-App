@@ -15,9 +15,10 @@
                 <footer class="blockquote-footer"><cite title="Source Title"> {{quote.name}} </cite></footer>
               </blockquote>
             </div>
-            <div class="card-body">
-                <a href="#" class="card-link"> {{quote.likes}} </a>
-                <a href="#" class="card-link"> {{quote.dislikes}} </a>
+            <div class="card-body d-flex justify-content-around">
+                <p> {{quote.likes}} </p>
+                <p> {{quote.dislikes}} </p>
+                <p>Posted {{quote.postedOn| date}}  </p>
               </div>
         </div>
     </div>

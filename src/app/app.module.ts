@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 // import { CardComponent } from './card/card.component';
 import { FormComponent } from './form/form.component';
 import { FormsModule } from '@angular/forms';
+import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     QuotesComponent,
     HomeComponent,
     // CardComponent,
-    FormComponent
+    FormComponent,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,
