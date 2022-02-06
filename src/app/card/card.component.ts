@@ -1,23 +1,22 @@
-// import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-// import { Quotes } from '../quotes';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Quotes } from '../quotes';
 
-// @Component({
-//   selector: 'app-card',
-//   templateUrl: './card.component.html',
-//   styleUrls: ['./card.component.css']
-// })
-// export class CardComponent implements OnInit {
-//   @Input()quotes!:Quotes;
-//   newQuote = new Quotes("","","",0,0,new Date());
-//   @Output() addQuote = new EventEmitter<Quotes>();
+@Component({
+  selector: 'app-card',
+  templateUrl: './card.component.html',
+  styleUrls: ['./card.component.css']
+})
+export class CardComponent implements OnInit {
+ 
+    @Input() quote!:Quotes;
+    @Output() isComplete = new EventEmitter<boolean>();
   
-//     submitQuote(){
-//   this.addQuote.emit(this.newQuote);
-//     }
+    quoteDelete(complete:boolean){
+      this.isComplete.emit(complete);
+    }
+  constructor() { }
 
-//   constructor() { }
+  ngOnInit(): void {
+  }
 
-//   ngOnInit(): void {
-//   }
-
-// }
+}

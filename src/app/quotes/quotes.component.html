@@ -15,10 +15,14 @@
                 <footer class="blockquote-footer"><cite title="Source Title"> {{quote.name}} </cite></footer>
               </blockquote>
             </div>
+
+            <div>
+              <p>Posted {{quote.postedOn|dateCount}} days ago </p>
+            </div>
             <div class="card-body d-flex justify-content-around">
                 <p> {{quote.likes}} </p>
                 <p> {{quote.dislikes}} </p>
-                <p>Posted {{quote.postedOn|dateCount}}  </p>
+                <app-card [quote]='quote' (isComplete) = 'deleteQuote($event,i)' ></app-card>
               </div>
         </div>
     </div>
