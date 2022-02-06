@@ -9,7 +9,7 @@ import { Quotes } from '../quotes';
 export class QuotesComponent implements OnInit {
   quotes:Quotes[]=[
     new Quotes("Martin Luther King Jr.", 'Priscah Limo', '"Our lives begin to end the day we become silent about things that matter."', 120,1 ,new Date(2019,1,5)),
-     new Quotes("Oprah winfrey", 'Priscah Limo', '"Be thankful for what you have; you will end up having more. If you concentrate on what you do not have, you will never, ever have enough"',200, 5 , new Date(2020,9,23)),
+    new Quotes("Oprah winfrey", 'Priscah Limo', '"Be thankful for what you have; you will end up having more. If you concentrate on what you do not have, you will never, ever have enough"',200, 5 , new Date(2020,9,23)),
     new Quotes("Maya Angelou", 'Priscah Limo', '“I have learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.”',80,1, new Date(2017,4,20)),
   ];
 
@@ -30,6 +30,7 @@ export class QuotesComponent implements OnInit {
 
   }
 
+ 
 
   constructor() { }
 

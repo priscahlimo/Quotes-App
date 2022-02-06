@@ -4,10 +4,10 @@
     <app-form (addQuote)="addNewQuote($event)" ></app-form>
 </div>
 
-    <div class="row">
-        <div  *ngFor="let quote of quotes; let i = index " class="col-md-4 mb-4 border border-success">
+    <div class="row ">
+        <div  *ngFor="let quote of quotes; let i = index " class="col-md-4 mb-4   border border-success">
             <div class="card-header">
-             <!-- {{quote.postedOn}} -->
+             
             </div>
             <div class="card-body">
               <blockquote class="blockquote mb-0">
@@ -19,9 +19,8 @@
             <div>
               <p>Posted {{quote.postedOn|dateCount}} days ago </p>
             </div>
-            <div class="card-body d-flex justify-content-around">
-                <p> <i class="bi bi-hand-thumbs-up text-danger fs-3"></i> {{quote.likes}} </p>
-                <p> <i class="bi bi-hand-thumbs-down text-danger fs-3"></i> {{quote.dislikes}} </p>
+            <div class="card-body">
+                
                 <app-card [quote]='quote' (isComplete) = 'deleteQuote($event,i)' ></app-card>
               </div>
         </div>

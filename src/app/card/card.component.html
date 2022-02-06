@@ -1,4 +1,6 @@
-<div class="col-md-3 text-right">
-    <button class="bg-danger text-white" (click)='quoteDelete(true)' id="del">Delete</button>
+<div class=" d-flex justify-content-between">
+    <p> <i class="bi bi-hand-thumbs-up text-danger fs-3" (click)="incrementLikes()" ></i> {{quote.likes}} </p>
+    <p> <i class="bi bi-hand-thumbs-down text-danger fs-3"(click)="incrementDislikes()" ></i> {{quote.dislikes}} </p>
+    <button class="bg-danger text-white" (click)='quoteDelete(true)'>Delete</button>
   </div>
 

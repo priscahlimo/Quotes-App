@@ -14,6 +14,18 @@ export class CardComponent implements OnInit {
     quoteDelete(complete:boolean){
       this.isComplete.emit(complete);
     }
+    incrementLikes(){
+        let liked = this.quote.likes;
+        liked++;
+        this.quote.likes = liked;
+      }
+    
+      incrementDislikes(){
+        let disliked = this.quote.dislikes;
+        disliked++;
+        this.quote.dislikes = disliked;
+      }
+    
   constructor() { }
 
   ngOnInit(): void {
