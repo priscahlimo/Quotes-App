@@ -20,8 +20,8 @@
               <p>Posted {{quote.postedOn|dateCount}} days ago </p>
             </div>
             <div class="card-body d-flex justify-content-around">
-                <p> {{quote.likes}} </p>
-                <p> {{quote.dislikes}} </p>
+                <p> <i class="bi bi-hand-thumbs-up text-danger fs-3"></i> {{quote.likes}} </p>
+                <p> <i class="bi bi-hand-thumbs-down text-danger fs-3"></i> {{quote.dislikes}} </p>
                 <app-card [quote]='quote' (isComplete) = 'deleteQuote($event,i)' ></app-card>
               </div>
         </div>
