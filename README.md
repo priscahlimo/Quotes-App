@@ -1,4 +1,8 @@
 # QuotesApp
+Build by Priscah Limo
+# Description
+
+This is a website where we generate quotes, post, like ,dislike or even delete a quote.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0.
 
