@@ -25,6 +25,8 @@ export class CardComponent implements OnInit {
         disliked++;
         this.quote.dislikes = disliked;
       }
+
+      
     
   constructor() { }
 

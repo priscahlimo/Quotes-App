@@ -9,6 +9,7 @@ import { CardComponent } from './card/card.component';
 import { FormComponent } from './form/form.component';
 import { FormsModule } from '@angular/forms';
 import { DateCountPipe } from './date-count.pipe';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { DateCountPipe } from './date-count.pipe';
     HomeComponent,
     CardComponent,
     FormComponent,
-    DateCountPipe
+    DateCountPipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
